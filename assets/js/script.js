@@ -144,6 +144,7 @@ document.write(`
                 <th scope="col">Hora</th>
                 <th scope="col">especialista</th>
                 <th scope="col">paciente</th>
+                <th scope="col">rut</th>
                 <th scope="col">prevision</th>
             </tr>
         </thead>
@@ -155,6 +156,7 @@ radiologia.forEach(function (elementos) {
             <td>${elementos.hora}</td>
             <td>${elementos.especialista}</td>
             <td>${elementos.paciente}</td>
+            <td>${elementos.rut}</td>
             <td>${elementos.prevision}</td>
         </tr>
     `);
@@ -175,6 +177,7 @@ document.write(`
                 <th scope="col">Hora</th>
                 <th scope="col">especialista</th>
                 <th scope="col">paciente</th>
+                <th scope="col">rut</th>
                 <th scope="col">prevision</th>
             </tr>
         </thead>
@@ -186,6 +189,7 @@ traumatologia.forEach(function (elementos) {
             <td>${elementos.hora}</td>
             <td>${elementos.especialista}</td>
             <td>${elementos.paciente}</td>
+            <td>${elementos.rut}</td>
             <td>${elementos.prevision}</td>
         </tr>
     `);
@@ -198,7 +202,7 @@ document.write(`
 
 // dental
 document.write(`
-<main class="container pt-5">    
+<main class="container pt-5">
     <h1 class="text-center">dental</h1>    
     <table class="table table-sm table-hover table-dark text-center">
         <thead>
@@ -206,6 +210,7 @@ document.write(`
                 <th scope="col">Hora</th>
                 <th scope="col">especialista</th>
                 <th scope="col">paciente</th>
+                <th scope="col">rut</th>
                 <th scope="col">prevision</th>
             </tr>
         </thead>
@@ -217,6 +222,7 @@ dental.forEach(function (elementos) {
             <td>${elementos.hora}</td>
             <td>${elementos.especialista}</td>
             <td>${elementos.paciente}</td>
+            <td>${elementos.rut}</td>            
             <td>${elementos.prevision}</td>
         </tr>
     `);
@@ -226,3 +232,85 @@ document.write(`
     </table>
 </main>
 `);
+
+
+// Primer paciente
+document.write(`
+<main class="container pt-5">    
+    <h1 class="text-center">Primer Paciente</h1>    
+    <table class="table table-sm table-hover table-dark text-center">
+        <thead>
+            <tr class="bg-info">
+                <th scope="col">Hora</th>
+                <th scope="col">especialista</th>
+                <th scope="col">paciente</th>
+                <th scope="col">rut</th>
+                <th scope="col">prevision</th>
+            </tr>
+        </thead>
+        <tbody>
+`);
+document.write(`
+    <tr>
+        <td>${dental[0].hora}</td>
+        <td>${dental[0].especialista}</td>
+        <td>${dental[0].paciente}</td>
+        <td>${dental[0].rut}</td>
+        <td>${dental[0].prevision}</td>
+    </tr>
+`);
+document.write(`
+        </tbody>
+    </table>
+</main>
+`);
+
+// ultimo paciente
+document.write(`
+<main class="container pt-5">    
+    <h1 class="text-center">Ultimo Paciente</h1>    
+    <table class="table table-sm table-hover table-dark text-center">
+        <thead>
+            <tr class="bg-info">
+                <th scope="col">Hora</th>
+                <th scope="col">especialista</th>
+                <th scope="col">paciente</th>
+                <th scope="col">rut</th>
+                <th scope="col">prevision</th>
+            </tr>
+        </thead>
+        <tbody>
+`);
+document.write(`
+    <tr>
+        <td>${dental[5].hora}</td>
+        <td>${dental[5].especialista}</td>
+        <td>${dental[5].paciente}</td>
+        <td>${dental[5].rut}</td>
+        <td>${dental[5].prevision}</td>
+    </tr>
+`);
+document.write(`
+        </tbody>
+    </table>
+</main>
+`);
+
+console.log(dental[0].paciente);
+console.log(dental[0].especialista);
+
+
+class pacientes{
+    constructor(hora,especialista,paciente,rut,prevencion){
+        this.hora = hora;
+        this.especialista = especialista;
+        this.paciente = paciente;
+        this.rut = rut;
+        this.prevencion = prevencion;
+    }
+}
+
+
+
+
+
