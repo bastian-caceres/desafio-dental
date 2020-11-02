@@ -10,7 +10,7 @@ var dental = [
         hora: "11:00", 
         especialista: "MARIA PIA ZAÑARTU",
         paciente: "ANGEL MUÑOZ",
-        rut: "11123425-6",
+        rut: "9878789-2",
         prevision: "ISAPRE"
     },
     {
@@ -55,7 +55,7 @@ var radiologia = [
         hora: "11:00", 
         especialista: "MARIA PIA ZAÑARTU",
         paciente: "ANGEL MUÑOZ",
-        rut: "11123425-6",
+        rut: "9878789-2",
         prevision: "ISAPRE"
     },
     {
@@ -100,7 +100,7 @@ var traumatologia = [
         hora: "11:00", 
         especialista: "MARIA PIA ZAÑARTU",
         paciente: "ANGEL MUÑOZ",
-        rut: "11123425-6",
+        rut: "9878789-2",
         prevision: "ISAPRE"
     },
     {
@@ -132,7 +132,6 @@ var traumatologia = [
         prevision: "ISAPRE"
     }
 ];
-
 
 // radiologia
 document.write(`
@@ -233,7 +232,6 @@ document.write(`
 </main>
 `);
 
-
 // Primer paciente
 document.write(`
 <main class="container pt-5">    
@@ -295,22 +293,3 @@ document.write(`
     </table>
 </main>
 `);
-
-console.log(dental[0].paciente);
-console.log(dental[0].especialista);
-
-
-class pacientes{
-    constructor(hora,especialista,paciente,rut,prevencion){
-        this.hora = hora;
-        this.especialista = especialista;
-        this.paciente = paciente;
-        this.rut = rut;
-        this.prevencion = prevencion;
-    }
-}
-
-
-
-
-
